@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: Euclid_Regular;
+    src: url(./assets/font/EuclidCircularA-Regular.ttf);
+}
+@font-face {
+    font-family: Euclid_Light;
+    src: url(./assets/font/EuclidCircularA-Light.ttf);
+}
+@font-face {
+    font-family: Euclid_Medium;
+    src: url(./assets/font/EuclidCircularA-Medium.ttf);
+}
+@font-face {
+    font-family: Euclid_Bold;
+    src: url(./assets/font/EuclidCircularA-Bold.ttf);
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+    padding: 0;
+    margin: 0;
+}
+body, html {
+    height: 100%;
+}
