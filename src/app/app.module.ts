@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { MessengerComponent } from './components/messenger/messenger.component';
 import { HeaderComponent } from './components/messenger/header/header.component';
+import { SidebarComponent } from './components/messenger/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
     MessengerComponent,
-    HeaderComponent
+    HeaderComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
