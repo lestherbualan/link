@@ -7,6 +7,7 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 import { MessengerComponent } from './components/messenger/messenger.component';
 import { HeaderComponent } from './components/messenger/header/header.component';
 import { SidebarComponent } from './components/messenger/sidebar/sidebar.component';
+import { MessageListComponent } from './components/messenger/message-list/message-list.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { SidebarComponent } from './components/messenger/sidebar/sidebar.compone
     NavigationComponent,
     MessengerComponent,
     HeaderComponent,
-    SidebarComponent
+    SidebarComponent,
+    MessageListComponent
   ],
   imports: [
     BrowserModule,

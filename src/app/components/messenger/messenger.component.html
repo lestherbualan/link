@@ -5,55 +5,189 @@
             <app-sidebar></app-sidebar>
         </div>
         <div class="col-span-2 bg-[#f9f9f9]">
-            <div class="p-3">
-                <div class="inline-flex w-full h-8">
-                    <p class="place-self-center text-2xl font-['Euclid-Medium']">Messages</p>
-                    <span class="m-auto"></span>
-                    <button class="p-1 rounded-md hover:bg-[#e0fad8]">
-                        <img src="../../../assets/icon/plus.svg" alt="">
+            <app-message-list></app-message-list>
+        </div>
+        <div class="col-span-8 max-h-screen">
+            <div class="h-24 bg-[#f9f9f9] inline-flex w-full p-4">
+                <div class="conto-avatar place-items-center inline-flex">
+                    <img class="rounded-full object-cover w-14 h-14 bg-slate-500" src="../../../assets/img/konoha.png" alt="">
+                    <button class="border-dashed border-2 rounded-full p-2 ml-2 hover:bg-[#e0fad8]">
+                        <img class="rounded-full object-cover w-6 h-6" src="../../../assets/icon/plus.svg" alt="">
                     </button>
                 </div>
-                <div class="inline-flex w-full mb-3">
-                    <p class="text-sm text-slate-400">243 Messages,</p>
-                    <p class="text-sm text-slate-400 ml-1">2 Unread</p>
+                <span class="m-auto"></span>
+                <div class="convo-title grid place-items-center w-60">
+                    <p class="title font-['Euclid-Bold'] text-2xl text-neutral-800">Konoha Group Chat</p>
+                    <p class="members text-slate-500 mt-[-10px]">11 members</p>
                 </div>
-                <div class="border-b-2 border-slate-700 pb-2 inline-flex w-full mt-5">
-                    <img class="mr-2" src="../../../assets/icon/search.svg" alt="" width="20" height="20">
-                    <input class="border-0 bg-transparent text-lg outline-none " type="text" placeholder="Search">
+                <span class="m-auto"></span>
+                <div class="convo-controls inline-flex place-items-center">
+                    <button class="mx-1 rounded-lg hover:bg-[#e0fad8] p-2">
+                        <img src="../../../assets/icon/search.svg" alt="">
+                    </button>
+                    <button class="mx-1 rounded-lg hover:bg-[#e0fad8] p-2">
+                        <img src="../../../assets/icon/more.svg" alt="">
+                    </button>
                 </div>
             </div>
-            <div class="m-3">
-                <p class="text-sm text-slate-500">All</p>
-            </div>
-            <div class="w-full">
-                <ul>
-                    <li class="inline-flex bg-[#e0fad8] w-full px-3 py-3 hover:cursor-pointer">
-                        <img class="rounded-full object-cover w-10 h-10 mr-3" src="../../../assets/img/konoha.png" alt="">
-                        <p class="title place-self-center overflow-auto truncate">Konoha Group Chat</p>
-                        <span class="m-auto"></span>
-                        <button class="hover:bg-[#cbe7c3] rounded-lg px-1">
-                            <img src="../../../assets/icon/more.svg" alt="" width="20" height="20">
-                        </button>   
-                    </li>
-                    <li class="inline-flex hover:bg-[#e0fad8] w-full px-3 py-3 hover:cursor-pointer">
-                        <img class="rounded-full object-cover w-10 h-10 mr-3" src="../../../assets/img/Akatsuki.webp" alt="">
-                        <p class="title place-self-center overflow-auto truncate">Akatsuki Crime Group</p>
-                        <span class="m-auto"></span>
-                        <button class="hover:bg-[#cbe7c3] rounded-lg px-1">
-                            <img src="../../../assets/icon/more.svg" alt="" width="20" height="20">
-                        </button>
-                    </li>
-                    <li class="inline-flex hover:bg-[#e0fad8] w-full px-3 py-3 hover:cursor-pointer">
-                        <img class="rounded-full object-cover w-10 h-10 mr-3" src="../../../assets/img/kurama.png" alt="">
-                        <p class="title place-self-center overflow-auto truncate">Jinchuriki Buy/Sell</p>
-                        <span class="m-auto"></span>
-                        <button class="hover:bg-[#cbe7c3] rounded-lg px-1">
-                            <img src="../../../assets/icon/more.svg" alt="" width="20" height="20">
-                        </button>
-                    </li>
-                </ul>
+            <div class="bg-[#fdfdfd] h-[calc(100%-96px)] p-4">
+                <div class="grid grid-rows-12">
+                    <div class="row-span-6 overflow-y-scroll mb-2">
+                        <ul class="h-[calc(100vh-420px)] p-3">
+                            <li class="my-2">
+                                <div class="inline-flex w-full">
+                                    <img src="../../../assets/img/naruto.jpg" alt="" class="w-12 h-12 rounded-full"> 
+                                    <div class="max-w-sm w-full bg-[#e0fad8] rounded-lg rounded-tl-none ml-2 px-3 py-2 break-words">
+                                        <p class="w-full">dattebayo!</p>
+                                        <img src="../../../assets/img/stoneface.jpg" alt="" class="hover:opacity-90 mt-1 rounded-lg hidden">
+                                        <div class="inline-flex w-full">
+                                            <p class="text-slate-400 text-xs place-self-center">2:54 PM</p>
+                                            <span class="m-auto"></span>
+                                            <p class="text-slate-400">&#10003;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="my-2">
+                                <div class="inline-flex w-full ">
+                                    <img src="../../../assets/img/naruto.jpg" alt="" class="w-12 h-12 rounded-full"> 
+                                    <div class="max-w-sm w-full bg-[#e0fad8] rounded-lg rounded-tl-none ml-2 px-3 py-2">
+                                        <p class="w-full">Hey! look what i draw in stone faces hahahaha!</p>
+                                        <img src="../../../assets/img/stoneface.jpg" alt="" class="hover:opacity-90 mt-1 rounded-lg">
+                                        <div class="inline-flex w-full">
+                                            <p class="text-slate-400 text-xs place-self-center">2:54 PM</p>
+                                            <span class="m-auto"></span>
+                                            <p class="text-slate-400">&#10003;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <li class="my-2">
+                                <div class="inline-flex w-full">
+                                    <img src="../../../assets/img/shikamaru.jpg" alt="" class="w-12 h-12 rounded-full"> 
+                                    <div class="max-w-sm w-full bg-[#e0fad8] rounded-lg rounded-tl-none ml-2 px-3 py-2">
+                                        <p class="w-full">Again naruto? what a troublesome.</p>
+                                        <img src="../../../assets/img/stoneface.jpg" alt="" class="hover:opacity-90 mt-1 rounded-lg hidden">
+                                        <div class="inline-flex w-full">
+                                            <p class="text-slate-400 text-xs place-self-center">2:54 PM</p>
+                                            <span class="m-auto"></span>
+                                            <p class="text-slate-400">&#10003;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="my-2">
+                                <div class="inline-flex w-full">
+                                    <img src="../../../assets/img/sasuke.jpg" alt="" class="w-12 h-12 rounded-full"> 
+                                    <div class="max-w-sm w-full bg-[#e0fad8] rounded-lg rounded-tl-none ml-2 px-3 py-2">
+                                        <p class="w-full">Idiot...</p>
+                                        <img src="../../../assets/img/stoneface.jpg" alt="" class="hover:opacity-90 mt-1 rounded-lg hidden">
+                                        <div class="inline-flex w-full">
+                                            <p class="text-slate-400 text-xs place-self-center">2:54 PM</p>
+                                            <span class="m-auto"></span>
+                                            <p class="text-slate-400">&#10003;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="my-2">
+                                <div class="inline-flex w-full">
+                                    <img src="../../../assets/img/sakura.jpg" alt="" class="w-12 h-12 rounded-full"> 
+                                    <div class="max-w-sm w-full bg-[#e0fad8] rounded-lg rounded-tl-none ml-2 px-3 py-2">
+                                        <p class="w-full">sasuke kuuuuun~~</p>
+                                        <img src="../../../assets/img/stoneface.jpg" alt="" class="hover:opacity-90 mt-1 rounded-lg hidden">
+                                        <div class="inline-flex w-full">
+                                            <p class="text-slate-400 text-xs place-self-center">2:54 PM</p>
+                                            <span class="m-auto"></span>
+                                            <p class="text-slate-400">&#10003;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="my-2">
+                                <div class="inline-flex w-full">
+                                    <img src="../../../assets/img/sakura.jpg" alt="" class="w-12 h-12 rounded-full"> 
+                                    <div class="max-w-sm w-full bg-[#e0fad8] rounded-lg rounded-tl-none ml-2 px-3 py-2">
+                                        <p class="w-full">Tsunade-sama is very angry here NARUTOOO!</p>
+                                        <img src="../../../assets/img/stoneface.jpg" alt="" class="hover:opacity-90 mt-1 rounded-lg hidden">
+                                        <div class="inline-flex w-full">
+                                            <p class="text-slate-400 text-xs place-self-center">2:54 PM</p>
+                                            <span class="m-auto"></span>
+                                            <p class="text-slate-400">&#10003;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>                            
+                            <li class="my-2">
+                                <!-- this is a sample of OWN BUBBLE -->
+                                <!-- place content to end, change border radius position from left to right and bubble background to #d4e3f7 -->
+                                <div class="inline-flex w-full place-content-end">
+                                    <div class="max-w-sm w-full bg-[#d4e3f7] rounded-lg rounded-tr-none ml-2 px-3 py-2">
+                                        <p class="w-full">Hahahaha! Idiot naruto.</p>
+                                        <img src="../../../assets/img/stoneface.jpg" alt="" class="hover:opacity-90 mt-1 rounded-lg hidden">
+                                        <div class="inline-flex w-full">
+                                            <p class="text-slate-400 text-xs place-self-center">2:54 PM</p>
+                                            <span class="m-auto"></span>
+                                            <p class="text-slate-400">&#10003;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="my-2">
+                                <div class="inline-flex w-full">
+                                    <img src="../../../assets/img/naruto.jpg" alt="" class="w-12 h-12 rounded-full"> 
+                                    <div class="max-w-sm w-full bg-[#e0fad8] rounded-lg rounded-tl-none ml-2 px-3 py-2">
+                                        <p class="w-full">Dattebayo!</p>
+                                        <img src="../../../assets/img/stoneface.jpg" alt="" class="hover:opacity-90 mt-1 rounded-lg hidden">
+                                        <div class="inline-flex w-full">
+                                            <p class="text-slate-400 text-xs place-self-center">2:54 PM</p>
+                                            <span class="m-auto"></span>
+                                            <p class="text-slate-400">&#10003;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="my-2">
+                                <!-- this is a sample of OWN BUBBLE -->
+                                <!-- place content to end, change border radius position from left to right and bubble background to #d4e3f7 -->
+                                <div class="inline-flex w-full place-content-end">
+                                    <div class="max-w-sm w-full bg-[#d4e3f7] rounded-lg rounded-tr-none ml-2 px-3 py-2">
+                                        <p class="w-full">haha. remove that or you'll be scolded by kakashi-san later</p>
+                                        <img src="../../../assets/img/stoneface.jpg" alt="" class="hover:opacity-90 mt-1 rounded-lg hidden">
+                                        <div class="inline-flex w-full">
+                                            <p class="text-slate-400 text-xs place-self-center">2:54 PM</p>
+                                            <span class="m-auto"></span>
+                                            <p class="text-slate-400">&#10003;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row-span-1 max-h-10">
+                        <div class="h-full border-t-2 mx-2">
+                            <textarea name="message_box" class="w-full outline-none px-2 py-1 bg-[#fdfdfd] mt-3" placeholder="Type something..."></textarea>
+                            <div class="inline-flex w-full mt-3">
+                                <button class="hover:bg-[#e0fad8] p-2 rounded-lg">
+                                    <img src="../../../assets/icon/image.svg" alt="" class="w-5 h-5">
+                                </button>
+                                <button class="hover:bg-[#e0fad8] p-2 rounded-lg">
+                                    <img src="../../../assets/icon/mic.svg" alt="" class="w-5 h-5">
+                                </button>
+                                <button class="hover:bg-[#e0fad8] p-2 rounded-lg">
+                                    <img src="../../../assets/icon/paperclip.svg" alt="" class="w-5 h-5">
+                                </button>
+                                <button class="hover:bg-[#e0fad8] p-2 rounded-lg">
+                                    <img src="../../../assets/icon/smile.svg" alt="" class="w-5 h-5">
+                                </button>
+                                <span class="m-auto"></span>
+                                <button class="px-3 py-2 bg-black text-white rounded-lg">Send</button>
+                            </div>
+                        </div>                        
+                    </div>
+                  </div>
             </div>
         </div>
-        <div class="col-span-8">3</div>
     </div>
 </div>
