@@ -3,7 +3,7 @@
         <p class="place-self-center text-2xl font-['Euclid-Medium']">Messages</p>
         <span class="m-auto"></span>
         <button class="p-1 rounded-md hover:bg-[#e0fad8]">
-            <img src="../../../assets/icon/plus.svg" alt="">
+            <img [src]="'/assets/icon/plus.svg'" alt="">
         </button>
     </div>
     <div class="inline-flex w-full mb-3">
@@ -11,7 +11,7 @@
         <p class="text-sm text-slate-400 ml-1">2 Unread</p>
     </div>
     <div class="border-b-2 border-slate-700 pb-2 inline-flex w-full mt-5">
-        <img class="mr-2" src="../../../assets/icon/search.svg" alt="" width="20" height="20">
+        <img class="mr-2" [src]="'/assets/icon/search.svg'" alt="" width="20" height="20">
         <input class="border-0 bg-transparent text-lg outline-none w-full" type="text" placeholder="Search">
     </div>
 </div>
@@ -21,27 +21,27 @@
 <div class="w-full">
     <ul>
         <li class="inline-flex bg-[#e0fad8] w-full px-3 py-3 hover:cursor-pointer border-t-2 border-[#b7faa2]">
-            <img class="rounded-full object-cover w-10 h-10 mr-3" src="../../../assets/img/konoha.png" alt="">
+            <img class="rounded-full object-cover w-10 h-10 mr-3" [src]="'/assets/img/konoha.png'" alt="">
             <p class="title place-self-center overflow-auto truncate">Konoha Group Chat</p>
             <span class="m-auto"></span>
             <button class="hover:bg-[#cbe7c3] rounded-lg px-1">
-                <img src="../../../assets/icon/more.svg" alt="" width="20" height="20">
+                <img [src]="'/assets/icon/more.svg'" alt="" width="20" height="20">
             </button>   
         </li>
         <li class="inline-flex hover:bg-[#e0fad8] w-full px-3 py-3 hover:cursor-pointer">
-            <img class="rounded-full object-cover w-10 h-10 mr-3" src="../../../assets/img/Akatsuki.webp" alt="">
+            <img class="rounded-full object-cover w-10 h-10 mr-3" [src]="'/assets/img/Akatsuki.webp'" alt="">
             <p class="title place-self-center overflow-auto truncate">Akatsuki Crime Group</p>
             <span class="m-auto"></span>
             <button class="hover:bg-[#cbe7c3] rounded-lg px-1">
-                <img src="../../../assets/icon/more.svg" alt="" width="20" height="20">
+                <img [src]="'/assets/icon/more.svg'" alt="" width="20" height="20">
             </button>
         </li>
         <li class="inline-flex hover:bg-[#e0fad8] w-full px-3 py-3 hover:cursor-pointer">
-            <img class="rounded-full object-cover w-10 h-10 mr-3" src="../../../assets/img/kurama.png" alt="">
+            <img class="rounded-full object-cover w-10 h-10 mr-3" [src]="'/assets/img/kurama.png'" alt="">
             <p class="title place-self-center overflow-auto truncate">Jinchuriki Buy/Sell</p>
             <span class="m-auto"></span>
             <button class="hover:bg-[#cbe7c3] rounded-lg px-1">
-                <img src="../../../assets/icon/more.svg" alt="" width="20" height="20">
+                <img [src]="'/assets/icon/more.svg'" alt="" width="20" height="20">
             </button>
         </li>
     </ul>
